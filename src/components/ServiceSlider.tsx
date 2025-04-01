@@ -1,15 +1,14 @@
 "use client"
 
 import { Swiper, SwiperSlide } from "swiper/react"
-import Image from "next/image"
 
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/free-mode"
 
 import { FreeMode, Pagination } from "swiper/modules"
-import { ProImages, ProImages2, ServiceData } from "@/constants"
-import { div } from "framer-motion/client"
+import { ServiceData } from "@/constants"
+
 
 const ServiceSlider = () => {
     return (

@@ -9,7 +9,6 @@ import "swiper/css/free-mode"
 
 import { FreeMode, Pagination } from "swiper/modules"
 import { ProImages, ProImages2 } from "@/constants"
-import { div } from "framer-motion/client"
 
 const ProjectSlider = () => {
     return (

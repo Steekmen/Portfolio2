@@ -1,10 +1,6 @@
 import {
     RxCrop,
     RxDesktop,
-    RxPencil2,
-    RxReader,
-    RxRocket,
-    RxAccessibility,
     RxHome,
     RxPerson,
     RxDashboard,

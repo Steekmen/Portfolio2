@@ -10,7 +10,7 @@ const Page = () => {
                     My Skills<span className='text-red-500'>.</span>
                 </h1>
                 <p className='max-w-[350px] text-[16px] text-gray-200 md:text-gray-400'>
-                    I'm an Optima student, completed 3 courses, doing web studies and working with JavaScript.
+                    I&apos;m an Optima student, completed 3 courses, doing web studies and working with JavaScript.
                 </p>
             </div>
             <div className='absolute -left-36 bottom-5 rotate-12 animate-pulse duration-75'>
