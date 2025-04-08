@@ -9,6 +9,7 @@ import "swiper/css/free-mode"
 
 import { FreeMode, Pagination } from "swiper/modules"
 import { ProImages, ProImages2 } from "@/constants"
+import Link from "next/link"
 
 const ProjectSlider = () => {
     return (
@@ -30,13 +31,15 @@ const ProjectSlider = () => {
                     <div className="grid grid-cols-1 gap-4 md:px-16">
                         {ProImages.map((image) => (
                             <div className="relative group w-[150px] h-[150px] md:w-full md:h-[320px]" key={image.src}>
-                                <Image
-                                    src={image.src}
-                                    alt="project image"
-                                    width={580}
-                                    height={580}
-                                    className="rounded-md h-full w-full"
-                                />
+                                <Link href={image.href}>
+                                    <Image
+                                        src={image.src}
+                                        alt="project image"
+                                        width={580}
+                                        height={580}
+                                        className="rounded-md h-full w-full"
+                                    />
+                                </Link>
 
                                 <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hove:opacity-70 transition-opacity duration-200" />
                                 <div className="cursor-pointer absolute inset-0 flex items-center justify-cenetr opacity-0 group-hove:opacity-70 transition-opacity duration-200 text-white md:text-lg">
@@ -58,13 +61,15 @@ const ProjectSlider = () => {
                     <div className="grid grid-cols-2 gap-4 md:px-16">
                         {ProImages2.map((image) => (
                             <div className="relative group w-[150px] h-[150px] md:w-[450px] md:h-[320px]" key={image.src}>
-                                <Image
-                                    src={image.src}
-                                    alt="project image"
-                                    width={580}
-                                    height={580}
-                                    className="rounded-md w-full h-full object-cover"
-                                />
+                                <Link href={image.href}>
+                                    <Image
+                                        src={image.src}
+                                        alt="project image"
+                                        width={580}
+                                        height={580}
+                                        className="rounded-md w-full h-full object-cover"
+                                    />
+                                </Link>
 
                                 <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hove:opacity-70 transition-opacity duration-200" />
                                 <div className="cursor-pointer absolute inset-0 flex items-center justify-cenetr opacity-0 group-hove:opacity-70 transition-opacity duration-200 text-white md:text-lg">

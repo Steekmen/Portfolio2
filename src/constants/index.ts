@@ -42,12 +42,15 @@ export const NavLinks = [
 export const ProImages = [
     {
         src: "/assets/projects/MyImage1.png",
+        href: "https://github.com/Optimaedu/knowhow"
     }
+
 ];
 
 export const ProImages2 = [
     {
         src: "/assets/projects/MyImage2.png",
+        href: "https://nummergissning.vercel.app"
     }
 ];
 
