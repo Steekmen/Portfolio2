@@ -31,7 +31,7 @@ const ProjectSlider = () => {
                     <div className="grid grid-cols-1 gap-4 md:px-16">
                         {ProImages.map((image) => (
                             <div className="relative group w-[150px] h-[150px] md:w-full md:h-[320px]" key={image.src}>
-                                <Link href={image.href}>
+                                <Link className="absolute z-50" href={image.href}>
                                     <Image
                                         src={image.src}
                                         alt="project image"
@@ -61,7 +61,7 @@ const ProjectSlider = () => {
                     <div className="grid grid-cols-2 gap-4 md:px-16">
                         {ProImages2.map((image) => (
                             <div className="relative group w-[150px] h-[150px] md:w-[450px] md:h-[320px]" key={image.src}>
-                                <Link href={image.href}>
+                                <Link className="absolute z-50" href={image.href}>
                                     <Image
                                         src={image.src}
                                         alt="project image"
